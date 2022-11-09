@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script 
+    src="https://kit.fontawesome.com/6170e46162.js" 
+    crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        width: 100%;
+    }
+    header {
+    width: 100%;
+    background-color: #e5002b;
+}
+.h-container{
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.LOGO{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+}
+.logo1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.search-i{
+    width: 45px;
+    height: 45px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #f5f5f5;
+}
+.search-i i{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+}
+.search-i:hover{
+    background-color: rgb(209, 209, 209);
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.search1{
+    display: flex;
+}
+.search2 input{
+    width: 400px;
+    padding: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.profile{
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishlist-h h1{
+    font-size: 14px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.wishlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #b60022;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+.w-i i{
+    color: #fff;
+}
+.sags-1 i{
+    color: #fff;
+}
+.sags{
+    border-right: 1px solid #777;
+    border-left: 1px solid #777;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.me-1{
+    background-color: #b60022;
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+}
+.header-2{
+    width: 100%;
+    background-color: rgb(172, 32, 32);
+}
+
+.h2-container{
+    max-width: 1400px;
+    margin: auto;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu-i i{
+    color: white;
+    font-size: 16px;
+}
+.menus ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.h3-container{
+    width: 100%;
+    background-color: aliceblue;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.header-3{
+    max-width: 1400px;
+    margin: auto;
+}
+.Active{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.active2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.orderby{
+    font-size: 16px;
+}
+.main-container{
+    width: 100%;
+}
+.main{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card1{
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 5px 5px 5px #a37979;
+}  
+.card1-img{
+    width: 100%;
+    height: 70%;
+    position: relative; /*ilvv garsaniig barih*/
+}
+.card1-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="h-container">
+            <div class="LOGO">
+                <div class="logo1">
+                    <img src="/img/logo-1.png" alt="">
+                </div>
+            </div>
+            <div class="search">
+                <div class="search1">
+                    <div class="search2">
+                        <input type="text" class="search" placeholder="Хайх утгаа оруулна уу...">
+                    </div>
+                    <div class="search-i">
+                        <i class="fas fa-search"></i>
+                     </div> 
+                </div>
+            </div>
+            <div class="h-icon">
+                <div class="profile">
+                    <div class="wishlist">
+                        <div class="wishlist-h">
+                            <h1>Хүслийн Жагсаалт</h1>
+                        </div>
+                        <div class="w-i">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="sags">
+                        <div class="sags-1">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="me">
+                        <div class="me-1">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    <div class="header-2">
+        <div class="h2-container">
+            <div class="menu">
+                <div class="menu-i">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div  class="menus"> 
+                    <ul class="menus-ul roboto">
+                        <li><a href="#">Бүх ангилал</a></li>
+                        <li><a href="#">Нүүр</a></li>
+                        <li><a href="#">Дэлгэц</a></li>
+                        <li><a href="#">Суурин компьютер </a></li>
+                        <li><a href="#">Зөөврийн компьютер</a></li>
+                        <li><a href="#">Сэлбэг эд анги</a></li>
+                        <li><a href="#">Дагалдах хэрэгсэл</a></li>
+                        <li><a href="#">Оффис тоног төхөөрөмж</a></li>
+                        <li><a href="#">Гар утас таблет</a></li>
+                        <li><a href="#">Бусад</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h3-container">
+        <div class="header-3">
+        <div class="Active">
+            <div class="active-1">
+                <nav class="">
+                <a href="https://citycomputer.mn">Нүүр</a>
+                <span class="">/</span> Зөөврийн Компьютер</nav>
+            </div>
+            <div class="active2">
+                <p class="texttt">Showing 1–16 of 68 results</p>
+                <form class="" method="get">
+                <select name="orderby" class="orderby" aria-label="Shop order">
+                    <option value="menu_order" selected="selected">Эрэмбэлэх</option>
+                    <option value="popularity">Ангилах</option>
+                    <option value="date">Sort by latest</option>
+                    <option value="price">Үнээр эрэмбэл: Хямдаас үнэтэйрүү</option>
+                    <option value="price-desc">Үнээр эрэмбэл: Үнэтэйгээс хямдруу</option>
+                </select>
+                <input type="hidden" name="paged" value="1">
+                <input type="hidden" name="min_price" value="1366788"><input type="hidden" name="max_price" value="4600000"></form>
+            </div>
+        </div>
+        </div>
+        </div>
+        </header>
+<main>
+    <div class="main-container">
+        <div class="main">
+            <div class="range">
+                <div class="searchch">
+                    <label for="search">Хайх</label>
+                    <br>
+                    <input type="search">
+                    <br>
+                    <input type="range">
+                </div>
+                <div class="rangge">
+
+                </div>
+            </div>
+            <div class="img-list">
+                <div class="card1">
+                    <div class="card1-img">
+                        <div class="pos">
+                            <div class="pos-h">
+                                <h1>SALE</h1>
+                            </div>
+                        </div>
+                      <img src="/img/2022-08-16T01-42-45.074Z-11-1-510x510.jpeg" alt="">
+                    </div>
+                    <div class="content roboto">
+                        <p>Дэлгэц/Monitor</p>
+                        <h4>Asus TUF -Gaming 28" Monitor -4k</h4>
+                        <p class="une">4,500,000₮</p> 
+                    </div>
+                </div> <div class="card1">
+                    <div class="card1-img">
+                        <div class="pos">
+                            <div class="pos-h">
+                                <h1>SALE</h1>
+                            </div>
+                        </div>
+                      <img src="/img/2022-08-16T01-42-45.074Z-11-1-510x510.jpeg" alt="">
+                    </div>
+                    <div class="content roboto">
+                        <p>Дэлгэц/Monitor</p>
+                        <h4>Asus TUF -Gaming 28" Monitor -4k</h4>
+                        <p class="une">4,500,000₮</p> 
+                    </div>
+                </div> <div class="card1">
+                    <div class="card1-img">
+                        <div class="pos">
+                            <div class="pos-h">
+                                <h1>SALE</h1>
+                            </div>
+                        </div>
+                      <img src="/img/2022-08-16T01-42-45.074Z-11-1-510x510.jpeg" alt="">
+                    </div>
+                    <div class="content roboto">
+                        <p>Дэлгэц/Monitor</p>
+                        <h4>Asus TUF -Gaming 28" Monitor -4k</h4>
+                        <p class="une">4,500,000₮</p> 
+                    </div>
+                </div> <div class="card1">
+                    <div class="card1-img">
+                        <div class="pos">
+                            <div class="pos-h">
+                                <h1>SALE</h1>
+                            </div>
+                        </div>
+                      <img src="/img/2022-08-16T01-42-45.074Z-11-1-510x510.jpeg" alt="">
+                    </div>
+                    <div class="content roboto">
+                        <p>Дэлгэц/Monitor</p>
+                        <h4>Asus TUF -Gaming 28" Monitor -4k</h4>
+                        <p class="une">4,500,000₮</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+</body>
